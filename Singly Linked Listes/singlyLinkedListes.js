@@ -79,3 +79,6 @@ list.push("oussama");
 // console.log(`${list.pop().value} has been deleted .`);
 // console.log(`${list.pop().value} has been deleted .`);
 // console.log(`${list.pop().value} has been deleted .`);
+//test shift function
+console.log(`${list.shift().value} has been deleted`);
+console.log(list.showValues());
