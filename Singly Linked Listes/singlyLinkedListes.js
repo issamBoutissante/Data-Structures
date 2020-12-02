@@ -51,23 +51,31 @@ class SinglyLinkedList {
       current = current.nextNode;
     }
   }
+  shift() {
+    let current = this.head;
+    this.head = current.nextNode;
+    return current;
+  }
 }
 let list = new SinglyLinkedList();
 list.push("issam");
-list.push("issam2");
-list.push("issam3");
-list.push("issam4");
-list.push("issam5");
+list.push("chaimae");
+list.push("nohaila");
+list.push("hamood");
+list.push("farah");
+list.push("oussama");
 //console.log(list);
 
 // // console.log(list.tail);
 // // console.log(list.length);
+//this is a test for push functions
 // list.showValues();
 // list.push("chaimae");
 // list.push("chaimae2");
 // list.push("chaimae3");
-console.log(`${list.pop().value} has been deleted .`);
-console.log(`${list.pop().value} has been deleted .`);
-console.log(`${list.pop().value} has been deleted .`);
-console.log(`${list.pop().value} has been deleted .`);
-console.log(`${list.pop().value} has been deleted .`);
+//this is a test for pop function
+// console.log(`${list.pop().value} has been deleted .`);
+// console.log(`${list.pop().value} has been deleted .`);
+// console.log(`${list.pop().value} has been deleted .`);
+// console.log(`${list.pop().value} has been deleted .`);
+// console.log(`${list.pop().value} has been deleted .`);
