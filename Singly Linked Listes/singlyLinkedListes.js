@@ -35,6 +35,7 @@ class SinglyLinkedList {
     return list;
   }
   pop() {
+    if (!this.head) return "undefind";
     if (this.length == 1) {
       let current = this.head;
       this.head = null;
@@ -52,8 +53,10 @@ class SinglyLinkedList {
     }
   }
   shift() {
+    if (!this.head) return "undefined";
     let current = this.head;
     this.head = current.nextNode;
+    this.length--;
     return current;
   }
 }
@@ -81,4 +84,23 @@ list.push("oussama");
 // console.log(`${list.pop().value} has been deleted .`);
 //test shift function
 console.log(`${list.shift().value} has been deleted`);
+console.log(list.length);
+console.log(list.showValues());
+console.log(`${list.shift().value} has been deleted`);
+console.log(list.length);
+console.log(list.showValues());
+console.log(`${list.shift().value} has been deleted`);
+console.log(list.length);
+console.log(list.showValues());
+console.log(`${list.shift().value} has been deleted`);
+console.log(list.length);
+console.log(list.showValues());
+console.log(`${list.shift().value} has been deleted`);
+console.log(list.length);
+console.log(list.showValues());
+console.log(`${list.shift().value} has been deleted`);
+console.log(list.length);
+console.log(list.showValues());
+console.log(`${list.shift().value} has been deleted`);
+console.log(list.length);
 console.log(list.showValues());
